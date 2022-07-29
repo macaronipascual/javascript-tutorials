@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Input</title>
+</head>
+<body>
+    <input type="text" id="num1" placeholder="Enter First Number"/>
+    <input type="text" id="num2" placeholder="Enter Second Number"/>
+    <button id="btnCompute" onclick="compute()">Compute</button>
+    <br/>
+    Add:<div id="div-add"></div>
+    Subtract:<div id="div-subtract"></div>
+    Multiply:<div id="div-multiply"></div>
+    Divide:<div id="div-divide"></div>
+    Modulo Division:<div id="div-modulo"></div>
+    String Interpolation:<div id="div-interpolation"></div>
+    <script type="text/javascript">
+            function compute(){
+                let num1 = Number(document.getElementById("num1").value);
+                let num2 = Number(document.getElementById("num2").value);
+                document.getElementById("div-add").innerHTML=num1+num2;
+                document.getElementById("div-subtract").innerHTML=num1-num2;
+                document.getElementById("div-multiply").innerHTML=num1*num2;
+                document.getElementById("div-divide").innerHTML=num1/num2;
+                document.getElementById("div-modulo").innerHTML=num1%num2;
+                document.getElementById("div-interpolation").innerHTML=`num1=${num1},num2=${num2}`;
+            }
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <br/>
+    <table>
+        <tr id="num-container" style="color: white;"></tr>
+    </table>
+    <script type="text/javascript">
+            let arr=[0,1,2,3,4,5,7];
+            document.getElementById("num-container").innerHTML="";
+            for(let key in arr){
+                document.getElementById("num-container").innerHTML+=(key%2===0?`<td style="background-color:red;">${arr[key]}</td>`:`<td style="background-color:blue;">${arr[key]}</td>`);
+            }
+
+    </script>
+</body>
+</html>

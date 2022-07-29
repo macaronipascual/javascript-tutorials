@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable</title>
+</head>
+<body>
+    <div id="div-integer"></div>
+    <div id="div-string"></div>
+    <div id="div-array"></div>
+    <div id="div-object"></div>
+    <script type="text/javascript">
+        window.onload = (event) => {
+            let int1 = 100;//is an integer
+            let str1= 'string';//is a string
+            let arr1=[0,1,2,3];//is an array
+            let obj1={"name":"object"};//is an object
+            document.getElementById("div-integer").innerHTML=int1;
+            document.getElementById("div-string").innerHTML=str1;
+            document.getElementById("div-array").innerHTML=JSON.stringify(arr1);
+            document.getElementById("div-object").innerHTML=JSON.stringify(obj1);
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+<body>
+    <input type="text" id="num1" placeholder="Enter First Number"/>
+    <button id="btnFor" onclick="forLoop()">Loop using For</button>
+    <button id="btnWhile" onclick="whileLoop()">Loop using While</button>   
+    <br/>
+    <table>
+        <tr id="num-container"></tr>
+    </table>
+    <script type="text/javascript">
+            function forLoop(){
+                let num1 = Number(document.getElementById("num1").value);
+                document.getElementById("num-container").innerHTML="";
+                for(let i=0;i<=num1-1;i++){
+                    document.getElementById("num-container").innerHTML+=`<td>${i+1}</td>`;
+                }
+            }
+            function whileLoop(){
+                let num1 = Number(document.getElementById("num1").value);
+                document.getElementById("num-container").innerHTML="";
+                let i=0;
+                while(i<=num1-1){
+                    document.getElementById("num-container").innerHTML+=`<td>${i+1}</td>`;
+                    i++;
+                }
+            }
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>operation</title>
+</head>
+<body>
+    <div id="div-add"></div>
+    <div id="div-subtract"></div>
+    <div id="div-multiply"></div>
+    <div id="div-divide"></div>
+    <div id="div-modulo"></div>
+    <div id="div-interpolation"></div>
+    <script type="text/javascript">
+        window.onload = (event) => {
+            let num1 = 1;
+            let num2 = 2;
+            document.getElementById("div-add").innerHTML=num2+num1;
+            document.getElementById("div-subtract").innerHTML=num2-num1;
+            document.getElementById("div-multiply").innerHTML=num2*num1;
+            document.getElementById("div-divide").innerHTML=num2/num1;
+            document.getElementById("div-modulo").innerHTML=num2%num1;
+            document.getElementById("div-interpolation").innerHTML=`num1=${num1},num2=${num2}`;
+        };
+    </script>
+</body>
+</html>
